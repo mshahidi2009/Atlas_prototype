@@ -78,7 +78,7 @@ const callClaude = useCallback(async (messages, sys) => {
     throw new Error("ANTHROPIC_API_KEY not configured");
   }
 
-  const res = await fetch("https://api.anthropic.com/v1/messages", {
+  const res = await fetch("/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
